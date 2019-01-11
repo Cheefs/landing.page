@@ -1,0 +1,143 @@
+.header .carousel-inner .container {
+    z-index: 10;
+    margin: 0 auto;
+    position: relative;
+}
+
+.header .carousel-inner .container .navbar{
+    position: absolute;
+    width: 100%;
+    margin-top: 40px;
+}
+.header .cart {
+    margin-left: 55px;
+    margin-right: 28px;
+}
+.header .search {
+    margin-right: 30px;
+}
+.header .search-btn {
+    cursor: pointer;
+}
+/* The animation code */
+@keyframes example {
+    from {width: 0;}
+    to {width: 100px;}
+    from {padding: 0;}
+    to { padding: 5px 10px;}
+}
+
+
+/* The element to apply the animation to */
+.search-input {
+    width: 0;
+    height: 32px;
+    border: none;
+    outline: none;
+    background-color: white;
+
+    border-radius: 3px;
+    margin-right: 5px;
+
+}
+.header .search-btn:focus .search-input{
+    animation-name: example;
+    animation-duration: 0.5s;
+    padding: 5px 10px;
+    width: 100px;
+}
+
+.search-input:focus{
+width: 100px;
+
+ padding: 5px 10px;
+}
+
+
+.carousel-control-next, .carousel-control-prev {
+    width: 10%;
+}
+
+.header .navbar-brand  {
+    display: flex;
+}
+
+.header .navbar-brand h3 {
+    /* width: 115px; */
+    /* height: 26px; */
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 34px;
+    font-weight: 400;
+    letter-spacing: -1.36px;
+    /* display: flex; */
+    /* height: 56px; */
+    /* width: 50%; */
+    /* margin-bottom: 0; */
+    /* margin-top: 10px; */
+    display: flex;
+    align-items: center;
+}
+
+.header .navbar-brand h3:hover {
+    color: #c7b299;
+}
+
+img:hover {
+    filter: brightness(60%);
+}
+
+.header #navbarNav{
+    justify-content: flex-end;
+}
+.header .nav-item a {
+/* Style for "Portfolio" */
+    /*width: 57px;*/
+    /*height: 11px;*/
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+}
+.header .nav-item a:hover {
+    color: #c7b299;
+}
+
+.header li.slider-pages {
+    border-radius: 73%;
+    height: 7px;
+    width: 7px;
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    opacity: 0.5;
+}
+
+.header li.slider-pages.active {
+    background-color: transparent;
+}
+
+.header li.slider-pages:hover {
+ opacity: unset;
+}
+
+.header .carousel-item img{
+    filter: brightness(40%);
+}
+
+.header .carousel-control-prev-icon,
+.header .carousel-control-next-icon {
+    content: '';
+    width: 30px;
+    height: 30px;
+    transform: rotate(48deg);
+
+    background-image: none;
+}
+.header .carousel-control-prev-icon {
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
+}
+.header .carousel-control-next-icon {
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+}

@@ -829,6 +829,7 @@ width: 605px;
 
 .posts-preview:hover .posts-desc {
     background-color: #362f2d;
+    border-color: #362f2d;
 }
 
 .posts-preview:hover .posts-desc-h3 {
